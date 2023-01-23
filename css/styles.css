@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --Grayish-blue: hsl(237, 18%, 59%);
+  --Soft-red: hsl(345, 95%, 68%);
+  --White: hsl(0, 0%, 100%);
+  --Dark-desaturated-blue: hsl(236, 21%, 26%);
+  --Very-dark-blue: hsl(235, 16%, 14%);
+  --Very-dark-mostly-black-blue: hsl(234, 17%, 12%);
+
+  --font-red-hat: 'Red Hat Text', sans-serif;
+  --font-size: 14px;
+}
+
+body {
+  background-color: var(--Very-dark-blue);
+  font-family: var(--font-red-hat);
+  font-size: var(--font-size);
+  text-transform: uppercase;
+}
+
+.container {
+  width: 90%;
+  max-height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.countdown__title {
+  color: var(--White);
+  font-size: 1.2rem;
+  letter-spacing: 4px;
+  font-weight: 700;
+  margin-top: 200px;
+}
+
+.countdown__timer {
+  display: blobk;
+}
