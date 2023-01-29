@@ -1,0 +1,67 @@
+@media (max-width: 600px) {
+  .countdown__timer--container div {
+    width: 100px;
+  }
+}
+
+@media (max-width: 500px) {
+  .countdown__timer {
+    gap: 25px;
+  }
+
+  .countdown__timer--container div {
+    width: 80px;
+    height: 80px;
+  }
+
+  .countdown__timer__elements {
+    font-size: 2.5rem;
+  }
+
+  .countdown__timer__names {
+    font-size: 0.70rem;
+  }
+
+  .social {
+    width: 120px;
+  }
+}
+
+@media (max-width: 425px) {
+  .countdown__timer--container div {
+    width: 70px;
+    height: 70px;
+  }
+
+  .countdown__timer__elements {
+    font-size: 2rem;
+  }
+
+  .countdown__timer__names {
+    font-size: 0.55rem;
+  }
+
+  .social {
+    width: 100px;
+    left: 42%;
+  }
+}
+
+@media (max-width: 375px) {
+  .countdown__timer {
+    gap: 15px;
+  }
+
+  .countdown__timer--container div {
+    width: 65px;
+    height: 65px;
+  }
+
+  .countdown__timer__elements {
+    font-size: 1.80rem;
+  }
+
+  .countdown__timer__names {
+    font-size: 0.40rem;
+  }
+}
