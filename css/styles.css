@@ -5,12 +5,12 @@
 }
 
 :root {
-  --Grayish-blue: hsl(237, 18%, 59%);
+  --Grayish-blue: #8486a9;
   --Soft-red: hsl(345, 95%, 68%);
   --White: hsl(0, 0%, 100%);
   --Dark-desaturated-blue: hsl(236, 21%, 26%);
   --Very-dark-blue: hsl(235, 16%, 14%);
-  --Very-dark-mostly-black-blue: hsl(234, 17%, 12%);
+  --Very-dark-mostly-black-blue: hsl(235, 18%, 12%);
 
   --font-red-hat: 'Red Hat Text', sans-serif;
   --font-size: 14px;
@@ -18,19 +18,29 @@
 
 body {
   background-color: var(--Very-dark-blue);
+  background-image: url(../images/bg-stars.svg);
   font-family: var(--font-red-hat);
   font-size: var(--font-size);
   text-transform: uppercase;
+  width: 100vw;
+  max-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .container {
   width: 90%;
-  max-height: 100%;
   margin: 0 auto;
+}
+
+.countdown {
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .countdown__title {
@@ -42,5 +52,50 @@ body {
 }
 
 .countdown__timer {
-  display: blobk;
+  width: 600px;
+  height: 200px;
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.countdown__timer--container div {
+  width: 120px;
+  height: 100px;
+  background-color: var(--Dark-desaturated-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  box-shadow: 7px 7px 7px 0px rgba(25,26,36,1);
+}
+
+.countdown__timer__elements {
+  width: 100%;
+  color: var(--Soft-red);
+  font-size: 3rem;
+}
+
+.countdown__timer__names {
+  color: var(--Grayish-blue);
+  letter-spacing: 4px;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.wave {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 160px;
+  background-repeat: no-repeat;
+  background-size: 100% 160px;
+  background-image: url(../images/pattern-hills.svg);
 }
