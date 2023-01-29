@@ -28,6 +28,10 @@
 }
 
 @media (max-width: 425px) {
+  .countdown__title {
+    font-size: 1.4rem;
+  }
+
   .countdown__timer--container div {
     width: 70px;
     height: 70px;
