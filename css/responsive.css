@@ -22,9 +22,9 @@
     font-size: 0.70rem;
   }
 
-  .social {
+  /*.social {
     width: 120px;
-  }
+  }*/
 }
 
 @media (max-width: 425px) {
@@ -45,10 +45,10 @@
     font-size: 0.55rem;
   }
 
-  .social {
+  /*.social {
     width: 100px;
     left: 42%;
-  }
+  }*/
 }
 
 @media (max-width: 375px) {
